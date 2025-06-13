@@ -31,7 +31,7 @@ function AllPlaylist() {
         console.log(item);
         
         return(
-         <div className='music' key={index} title={item.title}>
+         <Link  to={`/music/${item?.id}`} className='music' key={index} title={item.title}>
            <div className="music-left">
             <div className="playbox">
              <div className="circle" style={{cursor:"pointer"}}>
@@ -46,7 +46,7 @@ function AllPlaylist() {
            <div className="music-right">
             {FormattingMinuts(item.duration)}
            </div>
-         </div>
+         </Link>
         )
        })
       }

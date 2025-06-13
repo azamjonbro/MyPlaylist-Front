@@ -1,93 +1,120 @@
 /* jaini-purva-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Jaini Purva';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/jaini-purva-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-*{
- margin: 0;
- padding: 0px;
+  src: url('../fonts/jaini-purva-v1-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-body{
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
   font-family: 'Jaini Purva', serif;
   background: #5c5c5c;
 
 }
 
-a,li{
- text-decoration: none;
- list-style: none;
- outline: none;
- color: #fff;
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  color: #fff;
 
 }
-button, input,select, option{
- border: none;
- color: #fff;
- outline: none;
- background: none;
- width: 100%;
-} 
-.container{
- width: 80%;
- margin: 0 auto;
+
+button,
+input,
+select,
+option {
+  border: none;
+  color: #fff;
+  outline: none;
+  background: none;
+  width: 100%;
 }
 
-.header{
- width: 100%;
- position:sticky;
- top: 0px;
- left: 0px;
- background: #5c5c5c;
- box-shadow: 0px 4px 10px #505050;
- padding: 10px 0px;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.header-container{
- display: flex;
- align-items: center;
- justify-content: space-between;
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  background: #5c5c5c;
+  box-shadow: 0px 4px 10px #505050;
+  padding: 10px 0px;
 }
-.header-searchbox{
- display: flex;
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.header-search{
- padding: 10px 12px;
- min-width: 100%;
- background: #505050;
- border-radius: 10px;
+
+.header-searchbox {
+  display: flex;
+}
+
+.header-search {
+  padding: 10px 12px;
+  min-width: 100%;
+  background: #505050;
+  border-radius: 10px;
 
 }
-.header-search::placeholder{
- color: #fff;
+
+.header-search::placeholder {
+  color: #fff;
 
 }
 
 /* musics page styles */
 
 
-.allMusics{
- display: flex;
- flex-direction: column;
- gap: 10px;
- padding-top: 10px;
+.allMusics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
 }
-.music{
- width: 100%;
- background: #858585;
- box-shadow: 0px 4px 10px #4d4d4d;
- color: #fff;
- border-radius: 10px;
- padding: 10px;
- display: flex;
- align-items: center;
- justify-content:space-between;}
-.music-left{
- display: flex;
- align-items: center;
- gap: 10px;
- 
+
+.music {
+  width: 100%;
+  background: #858585;
+  box-shadow: 0px 4px 10px #4d4d4d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.music:hover {
+  background: #b8b8b8;
+
+}
+
+.music-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.onePlaylist {
+  width: 100vw;
+  height: 100vh;
+
 }
