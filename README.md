@@ -81,3 +81,4 @@ MIT – free to use and customize!
 ---
 
 Created with ❤️ by @azamjonbro
+## Fixed a typo in README
